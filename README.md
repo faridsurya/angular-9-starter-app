@@ -18,3 +18,12 @@ Auth Page (Login, Register, Forgot)
 - Angular Material Design
 - Uikit CSS file
 
+## Installation
+
+Git clone then run:
+
+```
+npm install
+```
+
+
