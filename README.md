@@ -1,27 +1,29 @@
-# Angular9Starter
+# Angular 9 Starter App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
-## Development server
+![Screenshot from 2020-05-15 10-53-11](https://user-images.githubusercontent.com/5952503/82009864-ab392380-969a-11ea-8415-2975973183d3.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Auth Page (Login, Register, Forgot)
 
-## Code scaffolding
+## Admin Page
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Screenshot from 2020-05-15 10-53-30](https://user-images.githubusercontent.com/5952503/82009886-b8561280-969a-11ea-9e0d-18a3aac73a14.png)
 
-## Build
+(Admin Page)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Required
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node JS v10+
+- Angular Material Design
+- Uikit CSS file
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Git clone then run:
 
-## Further help
+```
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
