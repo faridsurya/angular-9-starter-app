@@ -1,0 +1,24 @@
+<div class="uk-flex uk-flex-middle uk-flex-center uk-height-viewport" style="background-image: url('assets/wp_1.jpg'); background-size: cover; background-position: center;">  
+    <mat-card class="uk-width-1-3@m">
+        <div class="uk-flex uk-flex-center uk-margin-medium-bottom">
+            <h3>LOGIN</h3>
+        </div>
+      <mat-card-content>
+        <mat-form-field class="uk-width-1-1">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="your email" value="Sushi">
+          </mat-form-field>
+          <mat-form-field class="uk-width-1-1">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Your password" value="Sushi">
+          </mat-form-field>
+          <div class="uk-flex uk-flex-right">
+              <div class="uk-width-expand">
+                <button mat-button routerLink="/register">Create Account</button>
+                <button mat-button routerLink="/forgot">Forgot</button>
+              </div>
+              <button mat-raised-button color="primary" routerLink="/admin">LOGIN</button>
+          </div>
+      </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,32 @@
+<div class="uk-flex uk-flex-middle uk-flex-center uk-height-viewport">  
+    <mat-card class="uk-width-1-3@m">
+        <div class="uk-flex uk-flex-center uk-margin-medium-bottom">
+            <h3>Register</h3>
+        </div>
+      <mat-card-content>
+        <mat-form-field class="uk-width-1-1">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Fullname" value="Sushi">
+          </mat-form-field>
+        <mat-form-field class="uk-width-1-1">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. email@domain.com" value="Sushi">
+          </mat-form-field>
+          <mat-form-field class="uk-width-1-1">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Your password" value="Sushi">
+          </mat-form-field>
+          <mat-form-field class="uk-width-1-1">
+            <mat-label>Re-type Password</mat-label>
+            <input matInput type="password" placeholder="Your password" value="Sushi">
+          </mat-form-field>
+          <div class="uk-flex uk-flex-right">
+              <div class="uk-width-expand">
+                <button mat-button routerLink="/login">I have an account</button>
+                <button mat-button routerLink="/forgot">Forgot</button>
+              </div>
+              <button mat-raised-button color="primary">REGISTER</button>
+          </div>
+      </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Upload Image</h1>
+<div mat-dialog-content>
+  
+    <input type="file" (change)="fileChangeEvent($event)" />
+
+<image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="1"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+
+
+
+
+</div>
+<div mat-dialog-actions>
+    <span class="spacer"></span>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button [mat-dialog-close]="croppedImage" color="primary" cdkFocusInitial>Insert</button>
+</div>

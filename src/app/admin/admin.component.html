@@ -1,0 +1,63 @@
+<ng-container>
+    <!--toolbar-->
+    <mat-toolbar class="example-header">
+    <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+    </button>
+    <span>ANGULAR 9 ADMIN STARTER</span>
+    <span class="spacer"></span>
+    <button mat-button >DOWNLOAD</button>
+    </mat-toolbar>
+    <!--end toolbar-->
+    
+    <mat-sidenav-container class="example-container">
+    
+      <mat-sidenav #sidenav mode="side" [position]="'start'" opened class="sidenav-left"
+      [fixedInViewport]="true" [fixedTopGap]="60"
+      [fixedBottomGap]="0">
+    
+      <mat-nav-list>
+          <div *ngFor="let item of menu">
+        <div *ngIf="item.children !=undefined">
+            <h3 matSubheader >{{item.group}}</h3>
+            <mat-list-item *ngFor="let c of item.children" routerLink="{{c.url}}">
+                <mat-icon matListIcon>{{c.icon}}</mat-icon>
+                <h3 matLine>{{c.name}}</h3>
+            </mat-list-item>
+        </div>
+        <mat-list-item *ngIf="item.children == undefined" routerLink="{{item.url}}">
+            <mat-icon matListIcon>{{item.icon}}</mat-icon>
+            <h3 matLine>{{item.name}}</h3>
+        </mat-list-item>
+          
+        </div>
+    
+       </mat-nav-list>
+    
+    
+      </mat-sidenav>
+    
+    <mat-sidenav #sidenav mode="side" [position]="'end'"  class="example-sidenav"
+    [fixedInViewport]="true" [fixedTopGap]="60"
+    [fixedBottomGap]="0">
+    
+       
+    
+    </mat-sidenav>
+    <!--sidenav content-->
+    <mat-sidenav-content style="padding: 20px; background-color: #ccc;">
+    <!--halaman-halaman tampil disini-->
+    
+   
+<router-outlet></router-outlet>
+    
+    
+    
+    </mat-sidenav-content>
+    <!--end sidenav content-->
+    </mat-sidenav-container>   
+    </ng-container>
+    
+    
+    
+    
